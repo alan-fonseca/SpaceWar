@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13e00502-6130-41eb-8d30-6f6771c184a6" name="Changes" comment="Criação da main">
-      <change afterPath="$PROJECT_DIR$/Const.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/asset/MenuBG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClasseJogo/Background.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Background.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClasseJogo/Enemy.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Enemy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClasseJogo/EntityFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/EntityFactory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClasseJogo/Game.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClasseJogo/Interface1.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Interface1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClasseJogo/Level.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Level.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClasseJogo/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClasseJogo/Player.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Diagrama SpaceWar.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/Diagrama SpaceWar.mdj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
