@@ -20,8 +20,8 @@ class Menu:
         menu_option = 0
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(55, "Mountain", COLOR_ORANGE, ((WIN_WIDTH / 2), 70))
-            self.menu_text(55, "Shooter", COLOR_ORANGE, ((WIN_WIDTH / 2), 120))
+            self.menu_text(55, "Voltron", COLOR_ORANGE, ((WIN_WIDTH / 2), 70))
+            self.menu_text(55, "Defensor Lendário", COLOR_ORANGE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
