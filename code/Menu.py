@@ -4,8 +4,8 @@ import pygame as pygame
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from SpaceWar.Const import WIN_WIDTH, MENU_OPTION, COLOR_WHITE, COLOR_YELLOW
-from SpaceWar.Const import COLOR_ORANGE
+from SpaceWar.Const import WIN_WIDTH, MENU_OPTION, C_WHITE, C_YELLOW
+from SpaceWar.Const import C_ORANGE
 
 
 class Menu:
@@ -20,14 +20,14 @@ class Menu:
         menu_option = 0
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(55, "Voltron", COLOR_ORANGE, ((WIN_WIDTH / 2), 70))
-            self.menu_text(55, "Defensor Lendário", COLOR_ORANGE, ((WIN_WIDTH / 2), 120))
+            self.menu_text(55, "Voltron", C_ORANGE, ((WIN_WIDTH / 2), 70))
+            self.menu_text(55, "Defensor Lendário", C_ORANGE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
-                    self.menu_text(25, MENU_OPTION[i], COLOR_YELLOW, ((WIN_WIDTH / 2), 200 + 35 * i))
+                    self.menu_text(25, MENU_OPTION[i], C_YELLOW, ((WIN_WIDTH / 2), 200 + 35 * i))
                 else:
-                    self.menu_text(25, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), 200 + 35 * i))
+                    self.menu_text(25, MENU_OPTION[i], C_WHITE, ((WIN_WIDTH / 2), 200 + 35 * i))
 
             #  Desenhar na tela
             pygame.display.flip()

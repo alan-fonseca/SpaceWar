@@ -1,9 +1,11 @@
 #  C
 import pygame
 
-COLOR_ORANGE = (255, 128, 0)
-COLOR_WHITE = (255, 255, 255)
-COLOR_YELLOW = (255, 255, 0)
+C_ORANGE = (255, 128, 0)
+C_WHITE = (255, 255, 255)
+C_YELLOW = (255, 255, 0)
+C_PURPLE = (83, 48, 245)
+C_PINK = (228, 65, 213)
 
 #  M
 MENU_OPTION = ('NEW GAME 1P',
@@ -44,14 +46,48 @@ ENTITY_HEALTH = {'Level1Bg0': 999,
                  'Level1Bg4': 999,
                  'Level1Bg5': 999,
                  'Level1Bg6': 999,
-                 'Player1': 300,
-                 'Player2': 300,
+                 'Player1': 150,
+                 'Player2': 150,
                  'Player1Shot': 1,
                  'Player2Shot': 1,
                  'Enemy1Shot': 1,
                  'Enemy2Shot': 1,
-                 'Enemy1': 200,
-                 'Enemy2': 200
+                 'Enemy1': 70,
+                 'Enemy2': 60
+                 }
+
+ENTITY_DAMAGE = {'Level1Bg0': 0,
+                 'Level1Bg1': 0,
+                 'Level1Bg2': 0,
+                 'Level1Bg3': 0,
+                 'Level1Bg4': 0,
+                 'Level1Bg5': 0,
+                 'Level1Bg6': 0,
+                 'Player1': 1,
+                 'Player2': 1,
+                 'Player1Shot': 25,
+                 'Player2Shot': 20,
+                 'Enemy1Shot': 18,
+                 'Enemy2Shot': 19,
+                 'Enemy1': 1,
+                 'Enemy2': 1
+                 }
+
+ENTITY_SCORE = {'Level1Bg0': 0,
+                 'Level1Bg1': 0,
+                 'Level1Bg2': 0,
+                 'Level1Bg3': 0,
+                 'Level1Bg4': 0,
+                 'Level1Bg5': 0,
+                 'Level1Bg6': 0,
+                 'Player1': 0,
+                 'Player2': 0,
+                 'Player1Shot': 0,
+                 'Player2Shot': 0,
+                 'Enemy1Shot': 0,
+                 'Enemy2Shot': 0,
+                 'Enemy1': 109,
+                 'Enemy2': 118
                  }
 
 ENTITY_SHOT_DELAY = {'Player1': 20,  # Intervalo de criação de tiro de PlayerShot quando tecla pressionada

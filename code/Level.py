@@ -5,7 +5,7 @@ import pygame
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from SpaceWar.Const import COLOR_WHITE, MENU_OPTION, EVENT_ENEMY
+from SpaceWar.Const import C_WHITE, MENU_OPTION, EVENT_ENEMY, C_PURPLE, C_PINK
 from SpaceWar.code import Entity
 from SpaceWar.code.Enemy import Enemy
 from SpaceWar.code.EntityFactory import EntityFactory
@@ -27,6 +27,7 @@ class Level:
         # Definindo tempo aleatório para entrada de inimigo no jogo
         pygame.time.set_timer(EVENT_ENEMY, 3500)
 
+
     def run(self, ):
         pygame.mixer_music.load(f'./asset/{self.name}.mp3')
         pygame.mixer_music.set_volume(0.2)
@@ -44,9 +45,14 @@ class Level:
                     shoot = ent.shoot()
                     if shoot is not None:
                         self.entity_list.append(shoot)
+                if ent.name == 'Player1':
+                    self.level_text(20, f'P1: {ent.health} - Score: {ent.score}', C_PURPLE, (300, 10))
+                if ent.name == 'Player2':
+                    self.level_text(20, f'P2: {ent.health} - Score: {ent.score}', C_PINK, (430, 10))
+
             # Texto a ser "desenhado" na tela
-            self.level_text(20, f'FPSs: {clock.get_fps(): .0f}', COLOR_WHITE, (10, 10))
-            self.level_text(20, f'ENTs: {len(self.entity_list)}', COLOR_WHITE, (90, 10))
+            self.level_text(20, f'FPSs: {clock.get_fps(): .0f}', C_WHITE, (10, 10))
+            self.level_text(20, f'ENTs: {len(self.entity_list)}', C_WHITE, (90, 10))
 
             # Atualizar tela
             pygame.display.flip()
